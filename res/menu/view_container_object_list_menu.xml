@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/delete_container" android:title="Delete Container"
+		android:icon="@android:drawable/ic_menu_delete" />
+	<item android:id="@+id/enable_cdn" android:title="CDN MGMT"
+		android:icon="@drawable/add_button" />
+	<item android:id="@+id/refresh" android:title="Refresh"
+		android:icon="@drawable/refresh_button" />
+	<item android:id="@+id/cont_pref" android:title="Settings"
+		android:icon="@android:drawable/ic_menu_preferences" />
+	<item android:id="@+id/container_info" android:title="CDN URL"
+		android:icon="@android:drawable/ic_menu_preferences" />
+</menu>

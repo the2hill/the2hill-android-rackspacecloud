@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:csapi="http://docs.rackspacecloud.com/servers/api/v1.0"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://docs.rackspacecloud.com/servers/api/v1.0"
+>
+
+  <!-- Simple types that span multiple requests -->
+  <simpleType name="Progress">
+    <restriction base="xsd:int">
+      <minInclusive value="0"/>
+      <maxInclusive value="100" />
+    </restriction>
+  </simpleType>
+</schema>
+

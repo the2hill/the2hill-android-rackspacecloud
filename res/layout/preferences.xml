@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Geographical Location">
+		<ListPreference android:key="countries_type"
+			android:title="@string/country" android:entries="@array/country_entries"
+			android:entryValues="@array/country_values" android:dialogTitle="@string/country"
+			android:defaultValue="@string/country_default_value" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Authentication">
+		<EditTextPreference android:name="Authentication Preference"
+			android:summary="Enter a custom auth server URL."
+			android:defaultValue="http://" android:title="Auth Server URL"
+			android:key="authServerPref" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Email">
+		<EditTextPreference android:name="Email for CDN information."
+			android:summary="Enter global user email for this account."
+			android:defaultValue="user@address.com" android:title="User Email"
+			android:key="userEmailPref" />
+	</PreferenceCategory>
+</PreferenceScreen>

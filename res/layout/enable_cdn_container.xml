@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TextView android:id="@+id/textView1" android:layout_width="fill_parent"
+			android:layout_marginLeft="22dip" android:layout_height="wrap_content"
+			android:text="TTL Expiration"></TextView>
+		<Spinner android:layout_marginRight="30dip"
+			android:layout_marginLeft="26dip" android:id="@+id/ttl_spinner"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"></Spinner>
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="22dip"
+			android:text="Log Retention" />
+		<Spinner android:layout_marginRight="30dip"
+			android:layout_marginLeft="26dip" android:id="@+id/log_retention_spinner"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"></Spinner>
+		<TableRow android:id="@+id/tableRow1" android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+			<Button android:text="Enable" android:id="@+id/enable_button"
+				android:layout_width="fill_parent" android:layout_gravity="left"
+				android:layout_marginLeft="26dip" android:layout_marginTop="10dip"
+				android:layout_height="wrap_content"></Button>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow2" android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+			<Button android:text="Update" android:id="@+id/update_button"
+				android:layout_width="fill_parent" android:layout_gravity="left"
+				android:layout_marginLeft="26dip" android:layout_marginTop="10dip"
+				android:layout_height="wrap_content"></Button>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow2" android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+			<Button android:text="Purge" android:id="@+id/purge_cdn_button"
+				android:layout_width="fill_parent" android:layout_gravity="left"
+				android:layout_marginLeft="26dip" android:layout_marginTop="10dip"
+				android:layout_height="wrap_content"></Button>
+		</TableRow>
+		<TableRow android:id="@+id/tableRow2" android:layout_height="wrap_content"
+			android:layout_width="fill_parent">
+			<Button android:text="Disable" android:id="@+id/disable_button"
+				android:layout_width="fill_parent" android:layout_gravity="left"
+				android:layout_marginLeft="26dip" android:layout_marginTop="10dip"
+				android:layout_height="wrap_content"></Button>
+		</TableRow>
+		<ProgressBar android:id="@+id/save_container_progress_bar"
+			android:layout_width="30dip" android:layout_height="30dip"
+			android:layout_marginLeft="130dip" android:layout_marginTop="-42dip"
+			android:visibility="invisible" />
+
+		<TextView android:id="@+id/saving_container_label"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginLeft="172dip" android:layout_marginTop="-28dip"
+			android:visibility="invisible" android:textAppearance="?android:attr/textAppearanceMedium"
+			android:text="Saving..." />
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="64dip">
+	<ImageView android:id="@+id/icon" android:layout_width="37px"
+		android:paddingLeft="0px" android:paddingRight="0px"
+		android:paddingTop="0px" android:layout_marginRight="10px"
+		android:layout_marginLeft="10px" android:layout_marginTop="13px"
+		android:layout_height="37px" android:src="@drawable/ubuntu_icon" />
+
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<TableRow>
+			<TextView android:id="@+id/label" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="5px"
+				android:textColor="#FFFFFF" android:textSize="24sp" />
+		</TableRow>
+
+		<TableRow>
+			<TextView android:id="@+id/sublabel" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="0px"
+				android:textColor="#FFFFFF" android:text="256 server - CentOS 5.3"
+				android:textSize="12sp" />
+		</TableRow>
+	</TableLayout>
+
+
+</LinearLayout>

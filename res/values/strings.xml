@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, RackspaceCloudActivity!</string>
+	<string name="app_name">Rackspace Cloud</string>
+	<string name="username">User Name:</string>
+	<string name="apikey">API Key:</string>
+	<string name="login">Login</string>
+	<string name="authenticating">Authenticating...</string>
+	<string name="fields_missing">Fields Missing</string>
+	<string name="username_and_apikey_required">User Name and API Key are required.</string>
+	<string name="ok">OK</string>
+	<string name="country">Country Datacenter</string>
+	<string-array name="country_entries">
+		<item>US</item>
+		<item>UK</item>
+	</string-array>
+	<string-array name="country_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string name="country_default_value">0</string>
+	<string name="preference_name">Preferences</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ImageView android:layout_width="279dip"
+		android:layout_height="72dip" android:adjustViewBounds="true"
+		android:layout_gravity="center_horizontal" android:src="@drawable/rackspacecloud" />
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginLeft="22dip"
+		android:text="@string/username" />
+	<EditText android:id="@+id/login_username"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_marginLeft="22dip" android:layout_marginRight="30dip"
+		android:scrollHorizontally="true" android:autoText="false"
+		android:capitalize="none" android:gravity="fill_horizontal"
+		android:singleLine="true" android:inputType="textNoSuggestions"
+		android:imeOptions="actionNext" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginLeft="22dip"
+		android:text="@string/apikey" />
+	<EditText android:id="@+id/login_apikey"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_marginLeft="22dip" android:layout_marginRight="30dip"
+		android:scrollHorizontally="true" android:autoText="false"
+		android:capitalize="none" android:gravity="fill_horizontal"
+		android:singleLine="true" android:imeOptions="actionGo"
+		android:inputType="textNoSuggestions" android:password="true"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+		<Button xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/button" android:text="@string/login"
+			android:layout_width="100dip" android:layout_height="wrap_content"
+			android:layout_gravity="left" android:layout_marginLeft="20dip"
+			android:layout_marginTop="10dip" />
+		<CheckBox android:layout_width="wrap_content" android:id="@+id/show_clear"
+			android:layout_gravity="right" android:text="Show API Key"
+			android:layout_height="wrap_content"></CheckBox><!-- TODO -->
+
+	</LinearLayout>
+
+	<ProgressBar android:id="@+id/login_progress_bar"
+		android:layout_width="30dip" android:layout_height="30dip"
+		android:layout_marginLeft="130dip" android:layout_marginTop="-42dip"
+		android:visibility="invisible" />
+
+	<TextView android:id="@+id/login_authenticating_label"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginLeft="172dip" android:layout_marginTop="-28dip"
+		android:visibility="invisible" android:textAppearance="?android:attr/textAppearanceMedium"
+		android:text="@string/authenticating" />
+
+</LinearLayout>
+
+<!-- android:layout_height="wrap_content" -->

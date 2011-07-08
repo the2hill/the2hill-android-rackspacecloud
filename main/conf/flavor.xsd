@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:csapi="http://docs.rackspacecloud.com/servers/api/v1.0"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://docs.rackspacecloud.com/servers/api/v1.0"
+>
+
+  <element name="flavor" type="csapi:Flavor" />
+
+  <!-- Complex Types -->
+  <complexType name="Flavor">
+    <attribute type="xsd:int"    name="id"   use="required" />
+    <attribute type="xsd:string" name="name" use="required" />
+    <!-- Is ram in MB? -->
+    <attribute type="xsd:int"    name="ram"  use="optional" />
+    <!-- Is disk in GB? -->
+    <attribute type="xsd:int"    name="disk" use="optional" />
+  </complexType>
+
+</schema>
+

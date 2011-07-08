@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Email">
+		<EditTextPreference android:name="Email for recieving account information."
+			android:summary="The user email will be used to send info for purged CDN objects and containers."
+			android:defaultValue="user@address.com" android:title="User Email"
+			android:key="userEmailPref" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Email">
+		<CheckBoxPreference android:key="sendEmail"
+			android:title="Send email with CDN purge info." android:defaultValue="false" />
+	</PreferenceCategory>
+</PreferenceScreen>
